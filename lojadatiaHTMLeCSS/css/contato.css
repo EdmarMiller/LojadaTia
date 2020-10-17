@@ -1,0 +1,32 @@
+        #sectionContato {
+            display: flex;
+            background-color: rgb(161, 54, 54, .3);
+            width: 70%;
+            height: 500px;
+            margin: 0 auto;
+            margin-top: 80px;
+            border-radius: 100px;
+            box-shadow: 2px 25px 25px 2px rgba(0, 0, 0, 0.7);
+        }
+        
+        .divPContato {
+            display: flex;
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+        .divEmail {
+            background-color: #fff;
+            width: 50%;
+            border-radius: 100px;
+            margin: 50px;
+            text-align: center;
+            padding: 50px;
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.7);
+        }
+        
+        .divEmail a {
+            font-size: 25px;
+            font-weight: 500;
+            margin: 30px
+        }

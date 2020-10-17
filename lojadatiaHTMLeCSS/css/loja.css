@@ -1,0 +1,18 @@
+#divPai {
+    display: flex;
+    width: 90%;
+    height: 700px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div {
+    display: flex;
+    width: 20%;
+    height: 150px;
+    background-color: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+}

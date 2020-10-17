@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <script src="https://kit.fontawesome.com/8c94550fe6.js" crossorigin="anonymous"></script>
+    <title>Produtos</title>
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="./imagens/logo.png" alt="Logo" width="120px"></a>
+            </div>
+
+            <ul>
+                <li><a class="active" href="#">Produtos</a></li>
+                <li><a href="loja.html">Nossas Lojas</a></li>
+                <li><a href="produtos.html">Contatos</a></li>
+                <li><a href="#"><i class="far fa-heart "></i></a></li>
+                <li><a href="#"><i class="fas fa-cart-plus "></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <hr>
+
+    <main>
+        <div id="principal">
+            <div id="navLeft">
+                <h2>Categorias</h2>
+                <nav id="navProduto">
+                    <ul>
+                        <li onclick="exibir_todos()" class="catNavProdutos">Todos - (8)</li>
+                        <li onclick="exibir_bolos()" class="catNavProdutos">Bolos - (3)</li>
+                        <ul>
+                            <li onclick="exibir_categoria('branco')"><a href="#">Brancos</a></li>
+                            <li onclick="exibir_categoria('chocolate')"><a href="#">Chocolate</a></li>
+                            <li onclick="exibir_categoria('semAcucar')"><a href="#">Sem Açucar</a></li>
+                        </ul>
+                        <li onclick="exibir_doces()" class="catNavProdutos"> Doces - (5)</li>
+                        <ul>
+                            <li onclick="exibir_categoria('premium')"><a href="#">Premium</a></li>
+                            <li onclick="exibir_categoria('classico')"><a href="#">Clássicos</a></li>
+                            <li onclick="exibir_categoria('padrinho')"><a href="#">Padrinhos</a></li>
+                            <li onclick="exibir_categoria('tradicional')"><a href="#">Tradicionais</a></li>
+                            <li onclick="exibir_categoria('convidado')"><a href="#">Convidados</a></li>
+                        </ul>
+                    </ul>
+                </nav>
+            </div>
+            <section id="produtos">
+
+                <div style="display: block;" class="boxProduto" id="branco">
+                    <h3 class="nomeProduto">Bolo Branco</h3>
+                    <div class="imgProduto">
+                        <img src="./imagens/FLORESTA_BRANCA_4344-460x368.jpg" onclick="zoom(this)">
+                    </div>
+                    <div>
+                        <p class="descricaoProduto">Delicioso bolo de Chocolate</p>
+                        <p class="precoProduto">R$89,25</p>
+                        <p class="promocao">R$69,23</p>
+                    </div>
+                    <div class="botaoProduto">
+                        <button>Colocar no Cesto</button>
+                    </div>
+                </div>
+
+
+                <div style="display: block;" class="boxProduto" id="chocolate">
+                    <h3 class="nomeProduto">Bolo Chocolate</h3>
+                    <div class="imgProduto">
+                        <img src="imagens/PRESTIGIO_4383-460x368.jpg" onclick="zoom(this)">
+                    </div>
+                    <div>
+                        <p class="descricaoProduto">Delicioso bolo de Chocolate</p>
+                        <p class="precoProduto">R$89,25</p>
+                        <p class="promocao">R$69,23</p>
+                    </div>
+                    <div class="botaoProduto">
+                        <button>Colocar no Cesto</button>
+                    </div>
+                </div>
+
+
+                <div style="display: block;" class="boxProduto" id="semAcucar">
+                    <h3 class="nomeProduto">Bolo Sem Açucar</h3>
+                    <div class="imgProduto">
+                        <img src="./imagens/FRUTAS_4359-460x368.jpg" onclick="zoom(this)">
+                    </div>
+                    <div>
+                        <p class="descricaoProduto">Bolo ZERO Açucar</p>
+                        <p class="precoProduto">R$120,25</p>
+                        <p class="promocao">R$89,23</p>
+                    </div>
+                    <div class="botaoProduto">
+                        <button>Colocar no Cesto</button>
+                    </div>
+                </div>
+
+
+                <div style="display: block;" class="boxProduto" id="premium">
+                    <h3 class="nomeProduto">Premium</h3>
+                    <div class="imgProduto">
+                        <img src="imagens/cachepo-de-limao-SMH_8240-copiar-460x460.jpg" onclick="zoom(this)">
+                    </div>
+                    <div>
+                        <p class="descricaoProduto">Doces especiais pra pessoas especiais!</p>
+                        <p class="precoProduto">R$85,25</p>
+                        <p class="promocao">R$67,23</p>
+                    </div>
+                    <div class="botaoProduto">
+                        <button>Colocar no Cesto</button>
+                    </div>
+                </div>
+
+
+                <div style="display: block;" class="boxProduto" id="tradicional">
+                    <h3 class="nomeProduto">Tradicionais</h3>
+                    <div class="imgProduto">
+                        <img src="imagens/ALINE_DOCES-brigadeiro_belga-interno-600x600px-460x460.jpg" onclick="zoom(this)">
+                    </div>
+                    <div>
+                        <p class="descricaoProduto">Vai um brigadeiro?</p>
+                        <p class="precoProduto">R$85,25</p>
+                        <p class="promocao">R$67,23</p>
+                    </div>
+                    <div class="botaoProduto">
+                        <button>Colocar no Cesto</button>
+                    </div>
+                </div>
+
+
+                <div style="display: block;" class="boxProduto" id="classico">
+                    <h3 class="nomeProduto">Clássicos</h3>
+                    <div class="imgProduto">
+                        <img src="./imagens/ALINE_DOCES-casadinho-interno-600x600px-460x460.jpg" onclick="zoom(this)">
+                    </div>
+                    <div>
+                        <p class="descricaoProduto">Aqueles doces atemporais</p>
+                        <p class="precoProduto">R$65,25</p>
+                        <p class="promocao">R$35,83</p>
+                    </div>
+                    <div class="botaoProduto">
+                        <button>Colocar no Cesto</button>
+                    </div>
+                </div>
+
+
+                <div style="display: block;" class="boxProduto" id="convidado">
+                    <h3 class="nomeProduto">Convidados</h3>
+                    <div class="imgProduto">
+                        <img src="./imagens/SMH_8543-copiar-460x460.jpg " onclick="zoom(this)">
+                    </div>
+                    <div>
+                        <p class="descricaoProduto" >Lembraças Inesquecíveis</p>
+                        <p class="precoProduto">R$64,25</p>
+                        <p class="promocao">R$38,23</p>
+                    </div>
+                    <div class="botaoProduto">
+                        <button>Colocar no Cesto</button>
+                    </div>
+                </div>
+
+
+                <div class="boxProduto" id="padrinho">
+                    <h3 class="nomeProduto">Padrinhos</h3>
+                    <div class="imgProduto">
+                        <img src="./imagens/FLORESTA_BRANCA_4344-460x368.jpg"  width="140px"  >
+                    </div>
+                    <div>
+                        <p class="descricaoProduto">Convites lindos e saborosos.</p>
+                        <p class="precoProduto">R$75,25</p>
+                        <p class="promocao">R$57,23</p>
+                    </div>
+                    <div class="botaoProduto">
+                        <button>Colocar no Cesto</button>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+
+    <hr>
+
+   
+    <footer>
+        <h4 class="textCenter textSize25 ">Formas de Pagamento</h4>
+        <img class="imgFormasPagamento " src="./imagens/formar-pagamento.png " alt="Formas de pagamento "
+            title="Aceitamos quase todos os meios de pagamento!! ">
+        <hr>&copy;Edmar Miller
+    </footer>
+
+</body>
+
+</html>

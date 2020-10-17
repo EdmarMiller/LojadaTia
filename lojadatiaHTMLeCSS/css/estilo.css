@@ -1,0 +1,90 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Inicio header Nav */
+        
+        nav {
+            display: flex;
+            height: 120px;
+            width: 100%;
+            background: rgb(179, 172, 164);
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px 0 100px;
+            flex-wrap: wrap;
+        }
+        
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 5px;
+        }
+        
+        nav ul li a {
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            transition: all .5s ease;
+        }
+        
+        nav ul li a.active,
+        nav ul li a:hover {
+            color: #111;
+            background: #fff;
+        }
+        /* Fim header Nav */
+        
+        .textCenter {
+            text-align: center;
+            color: rgb(93, 92, 91);
+        }
+        
+        .tituloProduto {
+            margin: 5px;
+            font-size: 110%;
+            color: rgb(93, 92, 91);
+        }
+        
+        .textSize25 {
+            font-size: 25px;
+        }
+        
+        .textSize15 {
+            font-size: 17px;
+        }
+        
+        .endereco {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px 0 50px;
+            flex-wrap: wrap;
+        }
+        
+        footer {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Centro da pagina Principal */
+        
+        #divIndex {
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.308);
+            margin-top: 350px;
+            font-size: 35px;
+            color: #eee;
+            text-align: center;
+        }
