@@ -1,0 +1,29 @@
+#divPai {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+   
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+.div {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    align-items: center;
+    
+    margin: 50px 25px 10px 25px;
+}
+
+.endereco {
+    display: flex;
+    padding: 10px 15px 0 30px;
+    flex-wrap: wrap;
+    text-align: left;
+}
